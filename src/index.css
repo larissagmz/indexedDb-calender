@@ -1,0 +1,41 @@
+.calendar-table {
+    width: 400px;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+.calendar-table th,
+.calendar-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+    width: 14.28%; /* 100% dividido por 7 dias */
+}
+
+.day {
+    cursor: pointer;
+}
+
+.daysWeek {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+.has-event {
+    background-color: #ffeb3b; /* amarelo claro */
+    cursor: pointer;           /* muda o cursor para indicar clicável */
+    font-weight: bold;         /* deixa o texto em negrito */
+    border-radius: 6px;        /* cantos arredondados */
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito hover para dar feedback visual */
+.has-event:hover {
+    background-color: #fdd835; /* amarelo mais forte ao passar o mouse */
+}
+
+/* Estilo para o texto que indica número de eventos dentro do dia */
+.event-info {
+    font-size: 0.75em;
+    color: #555;
+    margin-top: 4px;
+}

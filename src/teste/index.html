@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="div-calender"></section>
+     <section>
+                <div class="div-description">
+                    <div class="table-container">
+                        <div class="table-header">
+                            <button class="add">+</button>
+                            <span>Tabela de Atividades</span>
+                            <svg
+                                class="arrow"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                            >
+                                <path fill="#fff" d="M8 5l8 7-8 7z"></path>
+                            </svg>
+                        </div>
+
+                        <table class="table-description">
+                            <thead class="table-head">
+                                <tr>
+                                    <th>
+                                       <label>
+                                            <input type="checkbox" id="selectAll"> Selecionar todos
+                                        </label>
+                                        Dias</th>
+                                    <th>Descrição</th>
+                                </tr>
+                            </thead>
+                        </table>
+
+                        <div id="tableRowsWrapper">
+                            <table>
+                                <tbody class="description-body"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    <script src="calendarioAno.js" type="module"></script>
+    <script src="otherCalender.js" type="module"></script>
+    <script src="teste.js" type="module"></script>
+    <script src="indexDb.js" type="module"></script>
+</body>
+</html>
